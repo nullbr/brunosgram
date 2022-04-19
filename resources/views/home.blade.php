@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-3 p-5">
-            <img src="https://i.pinimg.com/originals/62/9f/21/629f2154a091599beadf9c91ea657a70.jpg" style="height: 150px; width: 151px;" class="rounded-circle">
+    <div class="row d-flex mx-auto">
+        <div class="col-4 p-5">
+            <img src="https://i.pinimg.com/originals/62/9f/21/629f2154a091599beadf9c91ea657a70.jpg" style="height: 150px; width: 151px" class="rounded-circle">
         </div>
-        <div class="col-9 pt-5">
-            <div><h1>brmariano13</h1></div>
+        <div class="col-8 pt-5">
+            <div><h1>{{ $user->username }}</h1></div>
             <div class="d-flex">
                 <div class="pe-5"><strong>21</strong> Publicações</div>
                 <div class="pe-5"><strong>273</strong> Seguidores</div>
