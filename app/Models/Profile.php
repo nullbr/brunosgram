@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
+    protected $guarded = [];
+
     /** setting up relationship with User model **/
     public function user()
     {
