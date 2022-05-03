@@ -43,6 +43,18 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(
+            function ($user) {
+                $user->profile()->create([
+                    'title' => $user->username,
+                ]);
+            });
+    }
+
     /** setting up relationship with Post model **/
     public function posts()
     {
