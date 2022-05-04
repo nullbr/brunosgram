@@ -35,7 +35,7 @@ class PostsController extends Controller
             'image' => $imagePath,
         ]);
 
-        return redirect('/profile/' . auth()->user->id);
+        return redirect('/profile/' . auth()->user()->id);
     }
 
     public function show(\App\Models\Post $post)
