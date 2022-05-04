@@ -9,11 +9,11 @@
         <div class="row">
             <div class="col-8 offset-2">
                 <div class="row">
-                    <h1>Edit Profile</h1>
+                    <h1>Editar Perfil</h1>
                 </div>
 
                 <div class="row mb-3">
-                    <label for="title" class="col-md-4 col-form-label">Title</label>
+                    <label for="title" class="col-md-4 col-form-label">Título</label>
 
                     <input id="title" type="text"
                            class="form-control @error('title') is-invalid @enderror"
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label for="description" class="col-md-4 col-form-label">Description</label>
+                    <label for="description" class="col-md-4 col-form-label">Descrição</label>
 
                     <input id="description" type="text"
                            class="form-control @error('description') is-invalid @enderror"
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="row">
-                    <label for="image" class="col-md-4 col-form-label">Profile Image</label>
+                    <label for="image" class="col-md-4 col-form-label">Imagem de Perfil</label>
 
                     <input type="file" class="form-control-file" id="image" name="image">
 
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="row pt-4">
-                    <button class="btn btn-primary">Save Profile</button>
+                    <button class="btn btn-primary">Savar Perfil</button>
                 </div>
             </div>
         </div>
